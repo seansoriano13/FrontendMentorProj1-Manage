@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --ff-be-vietnam-pro: "Be Vietnam Pro", serif;
+
+  --fc--primary--bright-red: hsl(12, 88%, 59%);
+  --fc--primary--dark-blue: hsl(228, 39%, 23%);
+  --fc--neutral--grayish-blue: hsl(227, 12%, 61%);
+  --fc--neutral--very-dark-blue: hsl(233, 12%, 13%);
+  --fc--neutral--pale-red: hsl(13, 100%, 96%);
+  --fc--neutral--light-gray: hsl(0, 0%, 98%);
+
+  --fs--font-size: 16px;
+
+  --fw--regular: 400;
+  --fw--medium: 500;
+  --fw--bold: 700;
+}
+
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: var(--ff-be-vietnam-pro);
+  color: var(--fc--primary--dark-blue);
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*** END OF CSS RESET ***/
+
+.main-logo img{
+  width: 200px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.container.main{
+  gap: 5rem;
+}
+
+.wrapper{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: grid;
+  gap: 5rem;
+}
+
+
+nav{
+  /* background-color: lightcoral; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0rem 5rem 0rem;
+  font-size: var(--fs--font-size);
+}
+
+nav img{
+  margin-top: 8px;
+}
+
+nav a{
+  color: var(--fc--primary--dark-blue);
+}
+
+nav a:hover{
+  opacity: 70%;
+}
+
+nav ul{
+  padding: 0;
+  /* background-color: lightblue; */
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+
+.default-btn {
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--fc--primary--bright-red);
+  color: white;
+  font-weight: var(--fw--medium);
+  cursor: pointer;
+  font-size: var(--fs--font-size);
+  box-shadow: 0 10px 20px hsla(12, 88%, 59%, 0.4);  
+  transition: .2s;       
+}
+
+.default-btn:hover {
+  opacity: 70%;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header{
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 7rem;
+}
+
+.header-wrapper{
+  display: grid;
+  align-content: center;
+}
+
+.header h1{
+  --line-height-titles: 5rem;
+  font-size: 4.5rem;
+  font-weight: var(--fw--bold);
+  color: var(--fc--primary--dark-blue);
+  line-height: var(--line-height-titles);
+}
+
+p{
+  color: var(--fc--neutral--grayish-blue);
+  width: 50%;
+}
+
+.img-header img{
+  width: 100vw; 
+  height: 100%;
+ 
+}
+
+div h2{
+  font-size: 3rem;
+
+}
+
+.features-header h3{
+  font-size: 3rem;
+  text-wrap: wrap;
+  line-height: 3.5rem;
+}
+
+.features-header{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+
+
+
+@media (max-width: 320px) { /* Mobile (small) */}
+@media (min-width: 768px) { /* Tablet */}
+@media (min-width: 1024px) { /* Desktop */ }
